@@ -1,0 +1,118 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #0a0a0a;
+  --color-surface: #101010;
+  --color-panel: #1a1a1a;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a1a1a1;
+  --color-primary: #4FD1C5;
+  --color-secondary: #9F7AEA;
+}
+
+body {
+  font-family: 'Clash Display', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+.ant-layout {
+  background-color: var(--color-background) !important;
+}
+
+.ant-layout-sider {
+  background-color: var(--color-surface) !important;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.ant-menu {
+  background-color: var(--color-surface) !important;
+}
+
+.ant-layout-header {
+  background-color: var(--color-surface) !important;
+  padding: 0 !important;
+}
+
+.ant-card {
+  background-color: var(--color-panel);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ant-input, .ant-input-search {
+  background-color: var(--color-panel);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-primary);
+}
+
+.ant-input:hover, .ant-input:focus {
+  border-color: var(--color-primary);
+}
+
+.ant-btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.ant-btn-primary:hover, .ant-btn-primary:focus {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.ant-table {
+  background-color: var(--color-panel);
+  color: var(--color-text-primary);
+}
+
+.ant-table-thead > tr > th {
+  background-color: var(--color-surface) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ant-table-tbody > tr:hover > td {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.ant-pagination-item {
+  background-color: var(--color-panel);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.ant-pagination-item-active {
+  border-color: var(--color-primary);
+}
+
+.ant-pagination-item a {
+  color: var(--color-text-primary);
+}
+
+.ant-select-selector {
+  background-color: var(--color-panel) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.ant-select-arrow {
+  color: var(--color-text-secondary) !important;
+}
+
+.economic-news-table .ant-table-cell {
+  background-color: var(--color-panel);
+  color: var(--color-text-primary);
+}
+
+.economic-news-table .ant-table-row:hover .ant-table-cell {
+  background-color: var(--color-surface) !important;
+}
